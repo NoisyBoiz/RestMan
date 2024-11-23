@@ -7,6 +7,7 @@ public class DonHang265 {
     private int id;
     private Date ngaydat;
     private String ghichu;
+    private String trangthai;
     private KhachHang265 khachhang;
     private List<MonDat265> mondat;
     private List<ComboDat265> combodat;
@@ -36,6 +37,14 @@ public class DonHang265 {
 
     public void setGhichu(String ghichu) {
         this.ghichu = ghichu;
+    }
+
+    public String getTrangthai() {
+        return trangthai;
+    }
+
+    public void setTrangthai(String trangthai) {
+        this.trangthai = trangthai;
     }
 
     public KhachHang265 getKhachhang() {

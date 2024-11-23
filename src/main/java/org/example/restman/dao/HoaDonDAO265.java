@@ -14,13 +14,13 @@ public class HoaDonDAO265 extends DAO265 {
         super();
     }
 
-    public List<HoaDon265> getHoaDon(int id, Date ngaybatdau, Date ngayketthuc){
+    public List<HoaDon265> getHoaDon(int idMonAn, Date ngaybatdau, Date ngayketthuc){
         List<HoaDon265> listHoaDon = new ArrayList<>();
         String sql = "call LanGoiMon(?, ?, ?)";
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         try {
             CallableStatement cs = conn.prepareCall(sql);
-            cs.setInt(1, id);
+            cs.setInt(1, idMonAn);
             cs.setString(2, sdf.format(ngaybatdau));
             cs.setString(3, sdf.format(ngayketthuc));
             ResultSet rs = cs.executeQuery();

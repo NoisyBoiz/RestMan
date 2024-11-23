@@ -7,7 +7,7 @@ public class Combo265 {
     private String ten;
     private String mota;
     private float gia;
-    private List<ChiTietCombo265> chiTietCombo;
+    private List<ChiTietCombo265> ctCombo;
 
     public Combo265() {}
 
@@ -44,10 +44,10 @@ public class Combo265 {
     }
 
     public List<ChiTietCombo265> getChiTietCombo() {
-        return chiTietCombo;
+        return ctCombo;
     }
 
     public void setChiTietCombo(List<ChiTietCombo265> list) {
-        this.chiTietCombo = list;
+        this.ctCombo = list;
     }
 }

@@ -22,6 +22,7 @@
 
 <body>
     <h1> Tìm kiếm <%=(request.getParameter("name")!=null && !request.getParameter("name").trim().isEmpty())?request.getParameter("name"):""%></h1>
+
     <div class="form-group">
         <label> Tên món ăn </label>
         <input type="text" id="name" placeholder="VD: cơm" value="<%=(request.getParameter("name")!=null && !request.getParameter("name").trim().isEmpty())?request.getParameter("name"):""%>"/>
@@ -51,6 +52,7 @@
                 <% } %>
             </tbody>
         </table>
+
     <%} else{%>
         <h1> Không tìm thấy dữ liệu </h1>
     <%}}%>
